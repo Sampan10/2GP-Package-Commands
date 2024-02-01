@@ -29,3 +29,11 @@
 
 	sfdx force:package:version:promote -p version_01_id -v DevHubOrgAliasss
 	sfdx force:package:version:promote -p 04t5g000000AYMWAA4 -v devhub
+
+
+Additional Commands
+sfdx package:version:create:report -i 08c5g000000wnz1AAA
+sfdx force:limits:api:display
+sfdx force:package:version:list -p 0Ho5g000000sYhWCAU
+ sfdx force:package:delete --package 0Ho5g000000wkjGCAQ --targetdevhubusername devhub      
+sfdx force:org:open -u <scratch-org-alias>
