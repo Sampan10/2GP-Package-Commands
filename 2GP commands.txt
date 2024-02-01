@@ -1,6 +1,6 @@
 * Create Dev Hub and Dev edition Orgs.
 * Enable Unlocked and Second-Generation Managed Packaging in  Dev Hub Org.
-* reate and Register Your Namespace in DevHub org and link namespace to Dev Org.
+* Create and Register Your Namespace in DevHub org and link namespace to Dev Org.
 * Install Salesforce CLI in VSCode.
 * Create SFDX Project and Auth DevHub.
 
