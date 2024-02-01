@@ -36,8 +36,30 @@ Pre-requisites for creating 2GP Packages:
 3) Deploy the SFDX Project/Package to the scratch org
 
 		sfdx force:source:push
+4) Review your sfdx-project.json file
 
-3) Create Package Version.
+
+		{
+		  "packageDirectories": [
+		    {
+		      "path": "force-app",
+		      "default": true,
+		      "package": "My Package",
+		      "versionName": "ver 0.1",
+		      "versionNumber": "0.1.0.NEXT",
+		      "versionDescription": ""
+		    }
+		  ],
+		  "name": "My Package Project",
+		  "namespace": "namespace_devhub",
+		  "sfdcLoginUrl": "https://login.salesforce.com",
+		  "sourceApiVersion": "59.0",
+		  "packageAliases": {
+		    "My Package": "0Ho5g........"
+		  }
+		}
+
+5) Create Package Version.
  
 		sfdx force:package:create --name "<Package Name>" --packagetype Managed --path force-app --targetdevhubusername <Devhub Org Alias>
 
@@ -46,7 +68,7 @@ Pre-requisites for creating 2GP Packages:
 		sfdx force:package:create --name "My Package" --packagetype Managed --path force-app --targetdevhubusername DevHubOrg
 
 
-4) Create Beta version of the package
+6) Create Beta version of the package
 
 	Without -c (Code Coverage): CLI does not check the codecoverage but the problem with this is that the package cannot be promoted from 	Beta to Released package.
 
@@ -61,7 +83,7 @@ Pre-requisites for creating 2GP Packages:
 
 	*After sucessful Package version creation, System will generate Package Version ID and Package versions are beta until you promote them to a released state.
 
-5) Promote package to a released state
+7) Promote package to a released state
 
   	 To make your package available for the Production org, we need to promote it to the released state.
 
