@@ -65,7 +65,7 @@ Pre-requisites for creating 2GP Packages:
 
   	 To make your package available for the Production org, we need to promote it to the released state.
 
-		sfdx force:package:version:promote -p <Package VersiobId> -v <Devhub Org Alias>
+		sfdx force:package:version:promote -p <Package VersionId> -v <Devhub Org Alias>
 
 	example:
 
