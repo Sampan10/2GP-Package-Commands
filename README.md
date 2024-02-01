@@ -6,9 +6,9 @@ Pre-requisites for creating 2GP Packages:
 	* Create SFDX Project and Auth DevHub.
 
 1) Authenticate Devhub ORG.
-	sfdx force:auth:web:login -d -a <Devhub Org Alias>
+sfdx force:auth:web:login -d -a <Devhub Org Alias>
 or
-	sfdx force:auth:web:login --setdefaultdevhubusername -d -a  <Devhub Org Alias>
+sfdx force:auth:web:login --setdefaultdevhubusername -d -a  <Devhub Org Alias>
 
 example: sfdx force:auth:web:login --setdefaultdevhubusername -d -a  DevHubOrg
 
