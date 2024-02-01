@@ -67,8 +67,8 @@ display information about the API limits for your Salesforce org:
 List all versions of a specific package:
 	sfdx force:package:version:list
 	or
-	sfdx force:package:version:list -p <Package ID>
+	sfdx force:package:version:list -p <Package Id>
 
 Delete a package and its versions:
-	 sfdx force:package:delete --package <Package_ID> --targetdevhubusername <Devhub Org Alias>     
+	 sfdx force:package:delete --package <Package Version Id> --targetdevhubusername <Devhub Org Alias>     
 
