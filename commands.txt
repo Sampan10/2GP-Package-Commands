@@ -1,0 +1,31 @@
+1) Authenticate Dev HUB ORG:
+
+	sfdx force:auth:web:login -d -a DevHubOrgAliass
+	sfdx force:auth:web:login --setdefaultdevhubusername -d -a devhub
+
+
+
+2) Create a scratch org to deploy the package:
+
+	sfdx force:org:create --durationdays 2 --setdefaultusername --setalias devnew orgname=newstrach@q2.com edition=Developer
+	sfdx force:org:open -u devnew  
+	sfdx force:source:push
+
+
+3) Create Package Version:
+
+	sfdx force:package:create --name "APAC Lending Solutions" --packagetype Managed --path force-app --targetdevhubusername DevHubOrgAliasss
+	sfdx force:package:create --name "APAC Lending Solutions" --packagetype Managed --path force-app/ --targetdevhubusername DevHubOrgAliasss
+
+
+4) Create Beta version of the package:
+
+	sfdx force:package:version:create -p "APAC Lending Solutions" -v DevHubOrgAliasss -c
+	sfdx force:package:version:create -p "APAC Lending Solutions" -v devhub -c --codecoverage --installationkeybypass
+
+
+
+5) Create the Release version of the package by promoting the package
+
+	sfdx force:package:version:promote -p version_01_id -v DevHubOrgAliasss
+	sfdx force:package:version:promote -p 04t5g000000AYMWAA4 -v devhub
