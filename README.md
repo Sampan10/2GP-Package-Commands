@@ -56,6 +56,7 @@ Pre-requisites for creating 2GP Packages:
 
 		sfdx force:package:version:create -p "<Package Name>" -v <Devhub Org Alias> -c  --installationkeybypass
 	example:
+
 		sfdx force:package:version:create -p "My Package" -v DevHubOrg -c --installationkeybypass
 
 	*After sucessful Package version creation, System will generate Package Version ID and Package versions are beta until you promote them to a released state.
