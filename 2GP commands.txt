@@ -52,7 +52,7 @@ example:
 
        To make your package available for the Production org, we need to promote it to the released state.
 
-		sfdx force:package:version:promote -p <VersionID> -v <Devhub Org Alias>
+		sfdx force:package:version:promote -p <Package VersiobId> -v <Devhub Org Alias>
 	example:
 		sfdx force:package:version:promote -p 04t........ -v DevHubOrg
 
