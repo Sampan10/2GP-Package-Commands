@@ -94,6 +94,9 @@ Pre-requisites for creating 2GP/Second Generation Managed Packages:
 		sfdx force:package:version:promote -p 04t........ -v DevHubOrg
 
 Additional Commands:
+Check Code Coverage for Apex classes
+
+	sfdx force:apex:test:run -c -r human -w 30 -l RunAllTestsInOrg
 
 Track the Package version creation status:
 
