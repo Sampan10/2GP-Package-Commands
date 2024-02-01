@@ -5,7 +5,7 @@ Pre-requisites for creating 2GP Packages:
 	* Install Salesforce CLI in VSCode.
 	* Create SFDX Project and Auth DevHub.
 
-1) Authenticate Devhub ORG
+1) Authenticate Devhub ORG.
 	sfdx force:auth:web:login -d -a <Devhub Org Alias>
 or
 	sfdx force:auth:web:login --setdefaultdevhubusername -d -a  <Devhub Org Alias>
