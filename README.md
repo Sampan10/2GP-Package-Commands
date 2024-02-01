@@ -72,11 +72,12 @@ Pre-requisites for creating 2GP Packages:
 		sfdx force:package:version:promote -p 04t........ -v DevHubOrg
 
 Additional Commands:
-To track the Package version creation status:
+
+Track the Package version creation status:
 
 	sfdx package:version:create:report -i <Execution_ID>
 
-display information about the API limits for your Salesforce org:
+Display information about the API limits for your Salesforce org:
 
 	sfdx force:limits:api:display
 
