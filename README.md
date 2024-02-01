@@ -1,4 +1,4 @@
-Pre-requisites for creating 2GP Packages:
+Pre-requisites for creating 2GP/Second Generation Managed Packages:
 
 	* Create Dev Hub and Dev edition Orgs.
 	* Enable Unlocked and Second-Generation Managed Packaging in  Dev Hub Org.
